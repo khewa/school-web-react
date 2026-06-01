@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-buruvidu: #0A1628;
+  --color-navy-800: #1B2A4A;
+  --color-navy-700: #2C3E6B;
+
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8D5A3;
+  --color-gold-bright: #D4AF37;
+
+  --color-cream: #F0EDE5;
+  --color-cream-light: #F8F6F0;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --animate-bounce-slow: bounce 3s infinite;
+  
+}
+
+
+@layer base {       /* Apply theme to whole website */
+  html {
+    font-family: var(--font-body);
+    background: var(--color-cream-light);
+    color: var(--color-buruvidu);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    @apply font-body text-buruvidu bg-white;    /* apply kiyn ek dammama aniwaren apply wenw(body ekt) */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  ::selection {
+    @apply bg-gold text-buruvidu;
+  }
+}
