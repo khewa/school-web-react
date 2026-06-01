@@ -1,9 +1,11 @@
-import './index.css'
-function App(){
-  return(
+import Header from "./components/Header";
+import "./index.css";
+
+function App() {
+  return (
     <>
-      <h1 className='bg-burukashmini font-extrabold text-center'>Mn modai</h1>
+      <Header />
     </>
   );
 }
-export default App
+export default App;
